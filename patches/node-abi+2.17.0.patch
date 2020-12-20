@@ -1,0 +1,16 @@
+diff --git a/node_modules/node-abi/index.js b/node_modules/node-abi/index.js
+index fd66b2e..0b6d3e2 100644
+--- a/node_modules/node-abi/index.js
++++ b/node_modules/node-abi/index.js
+@@ -75,7 +75,10 @@ var supportedTargets = [
+   {runtime: 'electron', target: '6.0.0', abi: '73', lts: false},
+   {runtime: 'electron', target: '7.0.0', abi: '75', lts: false},
+   {runtime: 'electron', target: '8.0.0', abi: '76', lts: false},
+-  {runtime: 'electron', target: '9.0.0', abi: '80', lts: false}
++  {runtime: 'electron', target: '9.0.0', abi: '80', lts: false},
++  {runtime: 'electron', target: '10.0.0', abi: '82', lts: false},
++  {runtime: 'electron', target: '11.0.0', abi: '85', lts: false},
++  {runtime: 'electron', target: '12.0.0', abi: '87', lts: false},
+ ]
+ 
+ var additionalTargets = [

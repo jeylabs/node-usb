@@ -34,7 +34,8 @@
     "prebuild": "prebuild --force --strip --verbose --build_v8_with_gn=false --enable_lto=false",
     "test": "mocha --require coffeescript/register --grep Module test/*",
     "full-test": "mocha --require coffeescript/register test/*",
-    "valgrind": "coffee -c test/usb.coffee; valgrind --leak-check=full --show-possibly-lost=no node --expose-gc --trace-gc node_modules/mocha/bin/_mocha -R spec"
+    "valgrind": "coffee -c test/usb.coffee; valgrind --leak-check=full --show-possibly-lost=no node --expose-gc --trace-gc node_modules/mocha/bin/_mocha -R spec",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "bindings": "^1.4.0",
@@ -48,6 +49,7 @@
     "coffeescript": "~2.4.1",
     "mocha": "~6.1.4",
     "node-abi": "^2.17.0",
+    "patch-package": "^6.2.2",
     "prebuild": "^10.0.1"
   },
   "license": "MIT"
