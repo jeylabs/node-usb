@@ -54,9 +54,7 @@ script:
   done
 deploy:
   provider: releases
-  api_key:
-    # tm-rampart personal access token
-    secure: "ivZseBMz+0bsYcCFAXJ82mJIhmsRj4UN32bcggg+8ZYl8xzgC2P/kMGhPe8+4fDxo+lyxf4aJDKWozE0perMQKjjAOdri8MH2ufqGFRfkF0A3gJnOBcWMA6AP3ef0TE/HNF+NMluBCV+/VFPdsvZN08rnPauWzSBGy9SkeIJhY8="
+  api_key: $GITHUB_API_KEY
   file_glob: true
   file: prebuilds/*
   skip_cleanup: true
