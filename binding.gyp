@@ -2,7 +2,7 @@
   'variables': {
     'use_udev%': 1,
     'use_system_libusb%': 'false',
-    'v8_enable_pointer_compression%': 1,
+    'v8_enable_pointer_compression%': 0,
   },
   'targets': [
     {
